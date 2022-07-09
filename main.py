@@ -570,8 +570,8 @@ def donate(label, confirmation):
         markup.add(InlineKeyboardButton("Вернуться к списку групп", callback_data="session_list"))
     return markup
 
-bot.polling(none_stop=True, interval=5)
-# bot.infinity_polling(True)
+# bot.polling(none_stop=True, interval=5)
+bot.infinity_polling()
 # bot.infinity_polling(timeout=10, long_polling_timeout = 5)
 
 # globals().clear()
